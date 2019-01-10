@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Northern Sky Video Player!';
+  titletwo = 'Northern Sky Video Player!';
+
 }
