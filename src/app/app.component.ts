@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getLocaleTimeFormat } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Northern Sky Video Player!';
-  titletwo = 'Northern Sky Video Player!';
-
 }
