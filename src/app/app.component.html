@@ -18,38 +18,21 @@
       <thead>
         <tr>
           <th>Movie</th>
-          <th>Image</th> 
-          <th>Link</th>
-          <th>Details</th>
+          <th>ID</th> 
+          <th>Name</th>
+          <th>URL</th>
         </tr>
       </thead>
         <tbody *ngFor="let movie of moviesList">
           <tr>
             <a (click)="setCurrentMovie(movie.url)">
-              {{movie.name}}
               <img src="{{movie.img}}">
             </a>
+            <td>{{movie.id}}</td>
+            <td>{{movie.name}}</td>
+            <td>{{movie.url}}</td>
           </tr> 
         </tbody>
-<!--         
-        <tr>
-          <td>Harry Potter</td>
-          <button id="1" data="http://seusherams-usct.streaming.media.azure.net/a70afc20-234d-4f63-9e21-ef55d0194283/Panasonic_HDC_TM_700_P_50i.ism/manifest" 
-          (click)="videoEvent('http://seusherams-usct.streaming.media.azure.net/a70afc20-234d-4f63-9e21-ef55d0194283/Panasonic_HDC_TM_700_P_50i.ism/manifest')"><img src="assets/img/sean.png"/></button>
-          <td>Harry Potter and the goblet of fire</td>
-        </tr>
-        <tr>
-          <td>Forrest Gump</td>
-          <button id="2" data="http://seusherams-usct.streaming.media.azure.net/f08db708-0a99-45d6-b3fe-b3de9992a6ac/jellyfish-25-mbps-hd-hevc.ism/manifest" 
-           (click)="videoEvent($event)"><img src="assets/img/sean.png"/></button>
-          <td>"My mama said life is like a box of chocolates"</td>
-        </tr>
-        <tr>
-          <td>Good Will Hunting</td>
-          <button id="3" data="http://seusherams-usct.streaming.media.azure.net/c67cdfc7-2375-49e9-b413-d192cb48c60d/SampleVideo_1280x720_1mb.ism/manifest" 
-           (click)="videoEvent($event)"><img id="mel" src="assets/img/sean.png"/></button>
-          <td>Robin Williams back at it again</td>
-        </tr> -->
       </table>
 </div>
 <router-outlet></router-outlet>
