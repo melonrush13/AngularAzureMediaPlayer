@@ -21,14 +21,11 @@ export class AppComponent {
     url: '//seusherams-usct.streaming.media.azure.net/c67cdfc7-2375-49e9-b413-d192cb48c60d/SampleVideo_1280x720_1mb.ism/manifest'}
   ];
 
-  currentMovie = this.moviesList[0].url;
-  // currentMovie = '//willzhanmswest.streaming.mediaservices.windows.net/6f9c2ea5-d98f-4cbd-be90-57e3a41dfef7/EvalaTrailera.ism/manifest';
+  // currentMovie = this.moviesList[0].url;
+  currentMovie = 'https://willzhanmswest.streaming.mediaservices.windows.net/691f6ca8-2afe-4bc4-9359-df80ba0edb3a/nbcu.ism/manifest';
 
   public setCurrentMovie(url) {
     this.currentMovie = url;
   }
 
-  getAMPVersion(string) {
-    console.log(string);
-  }
 }
