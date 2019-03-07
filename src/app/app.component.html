@@ -4,44 +4,14 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h2>
-      Current Movie: {{ currentMovie }}
-  </h2>
 </div>
-
-<!--Section for Will's DRM Files-->
 <div style="text-align:center">
-  <video id="vid1" class="azuremediaplayer amp-default-skin" amp-big-play-centered classautoplay controls width="640" height="400">
-      <source src="{{currentMovie}}" type="application/vnd.ms-sstr+xml" data-setup='{"protectionInfo": [{"type": "PlayReady"},{"type": "Widevine"}]}'/>    
-  </video>
+  <nav>
+    <a routerLink ="/Upload"> Upload Movie</a>
+    <br>
+    <a routerLink ="/Playback"> Play Movie</a>
+  </nav>
 </div>
 
-<!-- <div style="text-align:center">
-  <video id="vid1" class="azuremediaplayer amp-default-skin" autoplay controls width="640" height="400" poster="poster.jpg" data-setup='{"nativeControlsForTouch": false}'>
-      <source src="{{currentMovie}}" type="application/vnd.ms-sstr+xml" />
-  </video>
-</div> -->
-
-<div>
-    <table style="width:100%">
-      <thead>
-        <tr>
-          <th>Movie</th>
-          <th>ID</th> 
-          <th>Name</th>
-          <th>URL</th>
-        </tr>
-      </thead>
-        <tbody *ngFor="let movie of moviesList">
-          <tr>
-            <a (click)="setCurrentMovie(movie.url)">
-              <img src="{{movie.img}}">
-            </a>
-            <td>{{movie.id}}</td>
-            <td>{{movie.name}}</td>
-            <td>{{movie.url}}</td>
-          </tr> 
-        </tbody>
-      </table>
-</div>
 <router-outlet></router-outlet>
+
